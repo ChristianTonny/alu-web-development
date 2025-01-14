@@ -58,11 +58,10 @@ header {
 /* Hero section */
 .hero-section {
     min-height: 100vh;
-    max-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('https://images.unsplash.com/photo-1470115636492-6d2b56f9146d');
+                url('background.png');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -430,19 +429,23 @@ blockquote cite span {
 /* Footer */
 footer {
     background: #071629;
-    padding: 4rem 10rem;
+    padding: 4rem 10rem 2rem;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
 .footer-logo {
@@ -514,4 +517,14 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.35;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 } 
